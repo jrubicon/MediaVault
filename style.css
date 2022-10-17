@@ -1,0 +1,437 @@
+body {
+  margin: 0;
+}
+.requestform {
+  margin: 200px auto;
+  width: 500px;
+  background-color: #ffffff;
+  /* background-color: #E9E9E9; */
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+.requestsubmitted {
+  text-align: center;
+  background-color: #3274d6;
+  width: 100%;
+  color: white;
+  display: none;
+}
+.requestsubmitted h1 {
+  padding-top:20px;
+}
+.requestform p {
+  text-align: center;
+  padding-bottom:20px;
+}
+.requestform form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.requestform form label {
+  margin: 20px;
+}
+.requestform form input{
+  width:100%;
+  height: 40px;
+}
+.requestform form input[type="submit"]{
+  width: 100%;
+  padding: 15px;
+  margin: 20px;
+  background-color: #3274d6;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+  outline: none;
+}
+.vaultlogo {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.vaultlogo img {
+  width: 100px;
+}
+.login {
+  min-width: 500px;
+  max-width: 800px;
+  background-color: #ffffff;
+  /* background-color: #E9E9E9; */
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 200px auto;
+}
+.login p {
+  text-align: center;
+  padding: 10px;
+}
+.login form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.login form div {
+  display: flex;
+  flex-flow: row;
+  margin: 10px;
+}
+.login form div label {
+    flex-basis: 25%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: #3274d6;
+  	color: #ffffff;
+}
+.login form div input[type="password"], .login form input[type="text"] {
+    flex: 1;
+    height: 40px;
+    padding: 20px;
+}
+.login form div input[type="submit"] {
+  	width: 100%;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+	  transition: background-color 0.2s;
+	  outline: none;
+    height: 60px;
+}
+.login form div input[type="submit"]:hover {
+	  background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+
+/* HOME PAGES */
+.navtop {
+  display: flex;
+/* background-color: #2f3947; */
+  background-color: #3274d6;
+	width: 100%;
+	border: 0;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+}
+.navtop div{
+  padding: 0 20px;
+}
+.navtop-links {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.navtop-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.navtop-links i {
+  margin: 0 5px;
+}
+.navtop-links a:hover {
+	color: #eaebed;
+}
+.navtop-logo h1 {
+	color: #eaebed;
+	font-weight: normal;
+}
+.content {
+	/* changed width to max-width */
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.pwchange div {
+  margin-top: 10px;
+}
+
+.productmenu {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.productsection {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.productrows {
+  display: flex;
+  max-width: 1000px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.inditem {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  overflow: auto;
+  margin: 20px;
+}
+.thumbnails {
+  width: 100px;
+}
+.upload_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.upload_table td, .upload_table th {
+  border: 1px solid #cbcbcb;
+  padding: 8px;
+}
+.upload_table th {
+  text-align:left;
+}
+.upload_table tr:nth-child(odd){
+  background-color: #f2f2f2;
+}
+.doc_items {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  margin: 20px;
+  max-width: 450px;
+}
+
+.image-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.image-menu button{
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: #3274d6;
+  color: white;
+  font-weight: bold;
+  box-shadow: 5px 5px 8px #888888;
+}
+.image-menu button:hover {
+  background-color: #97c1ff;
+  color: black;
+}
+.ctactive {
+  background-color: #ffffff !important;
+  color: black !important;
+}
+.download-tab-content {
+  margin-bottom: 100px;
+}
+
+.adminbuttons {
+  flex: 1 1 auto;
+  display: inline-flex;
+  flex-flow: row;
+  overflow: auto;
+  justify-content:center;
+  align-items: center;
+  margin-top: 40px;
+}
+.adminbuttons a{
+  margin: 10px;
+}
+.accessrequests {
+  flex: 1 1 auto;
+  display: inline-flex;
+  flex-flow: column;
+  justify-content:center;
+  align-items: center;
+  max-width: 1000px;
+}
+.passform {
+  flex: 1 1 auto;
+  display: inline-flex;
+  flex-flow: column;
+  overflow: auto;
+  justify-content:center;
+  align-items: center;
+  margin-top: 30px;
+}
+.updateresponse {
+  margin: 20px 0;
+  background-color: #3274d6;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.pendingrequests {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pendingrequests td, .pendingrequests th {
+  border: 1px solid #cbcbcb;
+  padding: 8px;
+}
+.pendingrequests th {
+}
+.pendingrequests tr:nth-child(odd){
+  background-color: #f2f2f2;
+}
+#row:hover {
+  background-color: #ddd;
+}
+.adminpanel {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  overflow: auto;
+}
+.contreq-title {
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  width: 100%;
+  text-align: center;
+  max-width: 700px;
+}
+.userrequestitems-content {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+#userreqform-succ {
+  display: none;
+  background-color: #3274d6;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.userrequestitems-content form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  width: 100%;
+  max-width: 700px;
+}
+.userrequestitems-content form label {
+  width: 100%;
+}
+.userrequestitems-content form input{
+  width:100%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.userrequestitems-content form textarea{
+  width:100%;
+  min-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+
+}
+.userrequestitems-content form input[type="submit"]{
+  width: 100%;
+  padding: 15px;
+  margin: 20px;
+  background-color: #3274d6;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+  outline: none;
+}
+
+.addMedia {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.addMedia table, .addMedia input, .addFolders table, .addFolders input{
+  width: 100%;
+}
+.addMedia textarea {
+  width: 100%;
+  resize: vertical;
+}
+.addMedia table th {
+  padding: 10px;
+}
+.addFolders table, th {
+  padding: 10px;
+}
+
+.addFolders {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.DelFolders {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.DelFolders form select {
+  width: 100%;
+}
+.DelFolders form input {
+  margin-top: 20px;
+}
+#admField {
+  background-color: #d52d2d9e;
+}
+.requestpass {
+  text-align: center;
+  background-color: #3274d6;
+  width: 100%;
+  color: white;
+}
+.requestpass h1 {
+  padding-top:20px;
+}
+
+footer {
+  display: flex;
+  align-self: flex-end;
+/* background-color: #2f3947; */
+  background-color: #3274d6;
+	width: 100%;
+	border: 0;
+  justify-content: center;
+}
+footer h1 {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+}
+.site-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1 1 auto;
+  overflow: auto;
+}
