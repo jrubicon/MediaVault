@@ -5,6 +5,7 @@ Generic media vault allows for uploading images, videos and documents.
 
 ## Installation
 Upon installing on a server, visiting /setup.php sets up the database connection and creates the tables and admin access.
+Be sure to add a folder via the admin panels "Add Media" section before attempting to upload files.
 
 ***Certain files need to be edited for outgoing emails, this includes:***
 - keypanel.php
